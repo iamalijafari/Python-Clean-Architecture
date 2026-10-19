@@ -11,3 +11,6 @@ class Task:
         self.id = task_id or uuid4()
         self.title = title.strip()
         self.is_completed = False
+
+    def complete(self) -> None:
+        self.is_completed = True
